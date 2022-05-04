@@ -22,7 +22,7 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Blogs</a></li>
             </ul>
-            <input type="button" value="login" />
+            <input type="button" value="login" onclick="togglemenu()" />
 
         </header>
         <div class="Content flex">
@@ -47,5 +47,21 @@
     </div>
 
 </body>
+    
+    <script>
+    var menulist = document.getElementById("menulist");
+    menulist.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if(menulist.style.maxHeight == "0px")
+        {
+            menulist.style.maxHeight == "130px";
+        }
+        else{
+            menulist.style.maxHeight == "0px";
+        }
+    }
+     </script>
+
 
 </html>
